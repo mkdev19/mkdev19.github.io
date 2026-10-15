@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Revisor</title>
+<link rel="icon" type="image/webp" href="data:image/webp;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f5fb;--grid:#dde4f2;--card:#fff;--ink:#14213d;--mute:#5b6784;--line:#d3dbec;--acc:#1f4fd8;--accink:#fff;--hl:#ffd84d;--ok:#138a5b;--bad:#d64545;--phy:#1f4fd8;--che:#138a5b;--mat:#b4521e;
+color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1521;--grid:#1b2438;--card:#17203a;--ink:#e9eefb;--mute:#97a3c2;--line:#2a3658;--acc:#6c93ff;--accink:#0f1521;--hl:#e8c32e;--ok:#3fd09a;--bad:#ff7b7b;--phy:#6c93ff;--che:#3fd09a;--mat:#ff9a62;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1521;--grid:#1b2438;--card:#17203a;--ink:#e9eefb;--mute:#97a3c2;--line:#2a3658;--acc:#6c93ff;--accink:#0f1521;--hl:#e8c32e;--ok:#3fd09a;--bad:#ff7b7b;--phy:#6c93ff;--che:#3fd09a;--mat:#ff9a62;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:24px 24px;color:var(--ink);font-family:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
+main{max-width:760px;margin:0 auto;padding:28px 16px 100px}
+h1{font-size:clamp(2rem,7vw,3.2rem);font-weight:800;margin:0;letter-spacing:-.02em;line-height:1.05}
+h1 span{background:linear-gradient(transparent 58%,var(--hl) 58%)}
+.sub{color:var(--mute);margin:8px 0 22px;max-width:52ch}
+h2{font-size:1.15rem;margin:30px 0 10px;font-weight:600}
+.panel{background:var(--card);border:1.5px solid var(--line);border-radius:10px;padding:14px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+form .wide{grid-column:1/-1}
+label{font-size:.85rem;color:var(--mute);display:block;margin-bottom:3px}
+input,select{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:8px;padding:9px 10px}
+input:focus-visible,select:focus-visible,button:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+button{font:inherit;font-weight:600;cursor:pointer;border-radius:8px;border:1.5px solid var(--ink);background:transparent;color:var(--ink);padding:8px 12px}
+button.pri{background:var(--acc);border-color:var(--acc);color:var(--accink)}
+.stats{display:flex;gap:10px;margin:0 0 6px;flex-wrap:wrap}
+.stat{flex:1 1 90px;background:var(--card);border:1.5px solid var(--line);border-radius:10px;padding:10px 12px}
+.stat b{display:block;font-size:1.8rem;line-height:1.1}
+.stat small{color:var(--mute)}
+.item{background:var(--card);border:1.5px solid var(--line);border-left:6px solid var(--phy);border-radius:10px;padding:12px 14px;margin-bottom:10px}
+.item[data-s="Chemistry"]{border-left-color:var(--che)}
+.item[data-s="Maths"]{border-left-color:var(--mat)}
+.top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.name{font-weight:600;font-size:1.05rem}
+.chapter-toggle{border:0;padding:0;background:transparent;color:var(--ink);font:inherit;font-weight:600;text-align:left;cursor:pointer}
+.chapter-toggle:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.rate[hidden]{display:none}
+.meta{color:var(--mute);font-size:.85rem}
+.late{color:var(--bad);font-weight:600}
+.curve{display:flex;gap:6px;margin:10px 0 2px;align-items:center;flex-wrap:wrap}
+.curve i{width:14px;height:14px;border-radius:50%;border:2px solid var(--line);display:inline-block}
+.curve i.on{background:var(--ok);border-color:var(--ok)}
+.curve i.now{border-color:var(--acc);background:var(--hl)}
+.curve em{font-style:normal;font-size:.75rem;color:var(--mute);margin-right:4px}
+.acts{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.acts .ok{border-color:var(--ok);color:var(--ok)}
+.acts .no{border-color:var(--bad);color:var(--bad)}
+.x{border:none;color:var(--mute);padding:2px 6px;font-size:1.2rem;line-height:1}
+.streak{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:6px}
+.streak b{font-size:1.8rem}
+.bar{display:flex;gap:5px}
+.bar i{width:16px;height:28px;border-radius:4px;border:1.5px solid var(--line)}
+.bar i.on{background:var(--ok);border-color:var(--ok)}
+.bar i.today{outline:2px solid var(--acc);outline-offset:1px}
+main{position:relative}
+h1{padding-right:52px}
+.gear{position:absolute;top:20px;right:16px;width:40px;height:40px;display:grid;place-items:center;padding:0;border-radius:50%;background:var(--card)}
+.pop{position:absolute;top:66px;right:16px;z-index:5;max-height:calc(100vh - 90px);overflow:auto;width:min(340px,calc(100% - 32px));background:var(--card);border:1.5px solid var(--line);border-radius:10px;padding:14px;box-shadow:0 8px 24px rgba(0,0,0,.18)}
+.pop[hidden]{display:none}
+.pop hr{border:0;border-top:1.5px solid var(--line);margin:14px 0}
+textarea{width:100%;font:inherit;font-size:.8rem;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:8px;padding:8px;resize:vertical}
+textarea:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.pop .acts{margin-top:8px}
+.undo{display:flex;justify-content:space-between;align-items:center;gap:10px;background:var(--card);border:1.5px solid var(--line);border-radius:10px;padding:8px 12px;margin-bottom:10px;font-size:.9rem}
+.tb{display:flex;gap:2px;align-items:center}
+.ov{position:fixed;inset:0;z-index:20;background:rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center;padding:16px;padding-bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+.ov[hidden]{display:none}
+.sheet{width:min(460px,100%);max-height:100%;overflow:auto}
+.sheet h2{grid-column:1/-1;margin:0}
+.fab{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:10;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;padding:0;background:var(--acc);border-color:var(--acc);color:var(--accink);box-shadow:0 4px 14px rgba(0,0,0,.3)}
+.rate{margin-top:10px}
+.rbtn{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin-top:6px}
+.rbtn button{padding:6px 2px;display:flex;flex-direction:column;align-items:center;line-height:1.2}
+.rbtn button b{font-size:1.05rem}
+.rbtn button small{font-size:.7rem;color:var(--mute)}
+.empty{color:var(--mute);border:1.5px dashed var(--line);border-radius:10px;padding:16px;background:var(--card)}
+.tools{display:flex;justify-content:space-between;align-items:center;margin-top:30px;color:var(--mute);font-size:.85rem}
+.theme-toggle{width:40px;height:40px;display:grid;place-items:center;padding:0;border-radius:50%;background:var(--card);color:var(--ink)}
+
+.brandmark{display:flex;align-items:center;gap:10px;margin:0 0 18px;padding-right:52px}
+.brandmark img{width:44px;height:44px;display:block;object-fit:cover;border-radius:11px;flex:0 0 auto}
+.brandmark span{font-size:1rem;font-weight:800;letter-spacing:-.02em;color:var(--ink)}
+
+
+/* Finishing touches: calm motion, tactile buttons, and clear feedback */
+button{transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease,background-color .16s ease,color .16s ease;-webkit-tap-highlight-color:transparent}
+@media (hover:hover) and (pointer:fine){
+  button:not(.chapter-toggle):not(.x):hover{transform:translateY(-1px);box-shadow:0 3px 9px rgba(20,33,61,.10)}
+  button.pri:hover{filter:brightness(1.045)}
+  .chapter-toggle:hover{color:var(--acc)}
+  .x:hover{background:var(--bg);color:var(--ink)}
+  .rbtn button:hover{border-color:var(--acc);background:var(--bg);color:var(--acc)}
+  .gear:hover,.theme-toggle:hover{color:var(--acc);background:var(--bg)}
+  .item:hover{transform:translateY(-1px);box-shadow:0 5px 14px rgba(20,33,61,.07)}
+}
+button:active,button:not(.chapter-toggle):not(.x):active{transform:scale(.975);box-shadow:none!important}
+.chapter-toggle{transition:color .16s ease}
+.item{transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+.rate:not([hidden]){animation:reviewReveal .2s ease-out both;transform-origin:top center}
+.pop:not([hidden]){animation:panelReveal .18s ease-out both;transform-origin:top right}
+.ov:not([hidden]) .sheet{animation:sheetReveal .2s ease-out both}
+.item.just-rated{animation:ratingPulse .65s ease-out both}
+.fab{transition:transform .16s ease,box-shadow .16s ease,filter .16s ease}
+@keyframes reviewReveal{from{opacity:0;transform:translateY(-5px) scale(.99)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes panelReveal{from{opacity:0;transform:translateY(-4px) scale(.99)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes sheetReveal{from{opacity:0;transform:translateY(8px) scale(.99)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes ratingPulse{0%{box-shadow:0 0 0 0 rgba(19,138,91,.05)}45%{box-shadow:0 0 0 3px rgba(19,138,91,.16)}100%{box-shadow:0 0 0 0 transparent}}
+.toast{position:fixed;z-index:30;left:50%;bottom:calc(88px + env(safe-area-inset-bottom,0px));width:max-content;max-width:calc(100vw - 32px);padding:10px 14px;border:1px solid var(--line);border-radius:999px;background:var(--ink);color:var(--card);box-shadow:0 8px 24px rgba(0,0,0,.18);font-size:.88rem;font-weight:600;text-align:center;pointer-events:none}
+.toast[hidden]{display:none}
+.toast.toast-show{animation:toastReveal .2s ease-out both}
+@keyframes toastReveal{from{opacity:0;transform:translate(-50%,8px) scale(.97)}to{opacity:1;transform:translate(-50%,0) scale(1)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+
+.cloud-block{margin-top:12px;padding:12px;border:1.5px solid var(--line);border-radius:10px;background:var(--bg)}
+.cloud-block h3{margin:0 0 4px;font-size:1rem}
+.cloud-block p{margin:0 0 10px;font-size:.82rem;color:var(--mute)}
+.cloud-block label{margin-top:8px}
+.cloud-block input{font-size:.85rem;padding:8px}
+.cloud-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}
+.cloud-actions button{font-size:.82rem;padding:7px 9px}
+.cloud-status{font-size:.8rem;margin-top:9px;color:var(--mute);overflow-wrap:anywhere}
+.cloud-status[data-state="success"]{color:var(--ok)}
+.cloud-status[data-state="error"]{color:var(--bad)}
+.cloud-status[data-state="working"]{color:var(--acc)}
+.cloud-signed-in[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<main>
+  <button class="gear" id="g" aria-label="Settings" aria-expanded="false" aria-controls="pop"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg></button>
+  <div class="pop" id="pop" hidden><label for="e">Exam date (JEE Main first attempt)</label><input id="e" type="date"><hr><label for="c">Daily cap: chapters to revise per day, split across subjects</label><select id="c"><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="8">8</option><option value="10">10</option><option value="12">12</option><option value="none">No cap</option></select>
+    <hr>
+    <label for="bk">Backup and restore</label>
+    <textarea id="bk" rows="4" placeholder="Tap Backup to get your data here. To restore, paste a backup here and tap Restore."></textarea>
+    <div class="acts"><button id="bb">Backup</button><button id="br" class="pri">Restore</button></div>
+    <div class="meta" id="bm" aria-live="polite"></div>
+    <hr>
+    <section class="cloud-block" aria-labelledby="gistTitle">
+      <h3 id="gistTitle">GitHub Gist sync</h3>
+      <p>Sync your chapters, confidence ratings, exam date and streak across devices using a secret GitHub Gist.</p>
+      <label for="gistToken">GitHub personal access token</label>
+      <input id="gistToken" type="password" placeholder="github_pat_… or ghp_…" autocomplete="off" spellcheck="false">
+      <label for="gistId">Gist ID (optional on first device)</label>
+      <input id="gistId" type="text" placeholder="Leave blank to find or create your Revisor Gist" autocomplete="off" spellcheck="false">
+      <label style="display:flex;align-items:center;gap:8px;color:var(--ink);font-size:.82rem;margin-top:10px">
+        <input id="gistRemember" type="checkbox" style="width:auto;margin:0"> Remember token on this device
+      </label>
+      <div class="cloud-actions">
+        <button id="gistConnect" type="button" class="pri">Connect & sync</button>
+        <button id="gistSyncNow" type="button" disabled>Sync now</button>
+      </div>
+      <div class="cloud-actions"><button id="gistDisconnect" type="button">Disconnect / forget token</button></div>
+      <div class="cloud-status" id="gistStatus" role="status" aria-live="polite">Not connected. Create a token with Gists read/write access, then connect.</div>
+      <p style="margin-top:10px"><strong>Security note:</strong> A secret Gist is unlisted, not truly private. Anyone with its URL can read it. Never put your token in the HTML file or a GitHub repository.</p>
+    </section>
+  </div>
+  <div class="brandmark"><img src="data:image/webp;base64,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" alt="Revisor logo"><span>Revisor</span></div>
+  <h1>Revise before you <span>forget</span></h1>
+  <p class="sub">Log each JEE chapter after you study it. Gaps grow from 1 to 30 days, but are shortened automatically so every chapter gets revised before your exam.</p>
+
+  <div class="stats">
+    <div class="stat"><b id="sDue">0</b><small>left today</small></div>
+    <div class="stat"><b id="sAll">0</b><small>chapters tracked</small></div>
+    <div class="stat"><b id="sDone">0</b><small>revisions done</small></div>
+    <div class="stat"><b id="sExam">0</b><small>days to exam</small></div>
+  </div>
+
+  <div class="panel streak"><div><span aria-hidden="true" style="font-size:1.6rem">🔥</span> <b id="sk">0</b> day streak<div class="meta">Revise at least one chapter a day. Last 14 days:</div></div><div class="bar" id="bar"></div></div>
+
+  <div class="ov" id="ov" hidden>
+  <form class="panel sheet" id="f">
+    <h2 id="ft">Add a chapter</h2>
+    <div class="wide"><label for="n">Chapter</label><input id="n" list="dl" placeholder="e.g. Rotational Motion" required autocomplete="off"></div>
+    <div><label for="s">Subject</label><select id="s"><option>Physics</option><option>Chemistry</option><option>Maths</option></select></div>
+    <div><label for="d" id="dlab">Studied on</label><input id="d" type="date" required></div>
+    <div class="wide"><button class="pri" type="submit" id="fs">Add chapter</button><button type="button" id="fc" style="margin-left:8px">Cancel</button></div>
+  </form></div>
+  <datalist id="dl"></datalist>
+
+  <h2>Revise today</h2>
+  <div id="undo" aria-live="polite"></div>
+  <div id="due"></div>
+
+  <h2>Coming up</h2>
+  <div id="up"></div>
+
+  <div class="tools"><span>Saved on this device · connect GitHub Gist for cloud sync.</span><button id="t" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.9 13A9 9 0 0 1 11 3.1 9 9 0 1 0 20.9 13Z"/></svg></button></div>
+</main>
+<button class="fab" id="fab" aria-label="Add chapter"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script>
+const GAPS=[1,3,7,14,21,30];
+const NAMES=["Units and Measurements","Kinematics","Laws of Motion","Work Energy Power","Rotational Motion","Gravitation","Thermodynamics","Electrostatics","Current Electricity","Magnetism","Electromagnetic Induction","Optics","Modern Physics","Mole Concept","Atomic Structure","Chemical Bonding","Chemical Equilibrium","Electrochemistry","Chemical Kinetics","Periodic Table","Coordination Compounds","GOC","Hydrocarbons","Aldehydes and Ketones","Quadratic Equations","Complex Numbers","Sequences and Series","Permutations and Combinations","Binomial Theorem","Matrices and Determinants","Probability","Straight Lines","Circles","Conic Sections","Limits Continuity Differentiability","Application of Derivatives","Definite Integrals","Differential Equations","Vectors and 3D"];
+document.getElementById("dl").innerHTML=NAMES.map(x=>`<option value="${x}">`).join("");
+
+const KEY="jee-revise-v1";
+let toastTimer=null;
+function showToast(message){
+  const toast=document.getElementById("toast");if(!toast)return;
+  toast.textContent=message;toast.hidden=false;toast.classList.remove("toast-show");
+  void toast.offsetWidth;toast.classList.add("toast-show");
+  clearTimeout(toastTimer);toastTimer=setTimeout(()=>{toast.hidden=true;toast.classList.remove("toast-show")},2200);
+}
+let items=[];
+try{items=JSON.parse(localStorage.getItem(KEY)||"[]")}catch(e){items=[]}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(items))}catch(e){}};
+const iso=d=>{const z=new Date(d.getTime()-d.getTimezoneOffset()*6e4);return z.toISOString().slice(0,10)};
+const today=()=>iso(new Date());
+const add=(s,n)=>{const d=new Date(s+"T12:00:00");d.setDate(d.getDate()+n);return iso(d)};
+const diff=(a,b)=>Math.round((new Date(a+"T12:00:00")-new Date(b+"T12:00:00"))/864e5);
+let exam="2027-01-22";
+try{exam=localStorage.getItem(KEY+"-exam")||exam}catch(e){}
+const gapFor=s=>{const left=diff(exam,today());return left>1?Math.max(1,Math.min(GAPS[s],Math.floor(left/2))):1};
+const nextDue=(base,gap)=>{let d=add(base,gap);const last=add(exam,-1);if(d>last&&last>today())d=last;return d};
+let cap="3";
+try{cap=localStorage.getItem(KEY+"-cap")||cap}catch(e){}
+let picks={};
+try{picks=JSON.parse(localStorage.getItem(KEY+"-picks")||"{}")}catch(e){}
+if(!Array.isArray(picks.ids))picks.ids=[];
+let days=[];
+try{days=JSON.parse(localStorage.getItem(KEY+"-days")||"[]")}catch(e){}
+const markDay=()=>{const t=today();if(!days.includes(t)){days.push(t);try{localStorage.setItem(KEY+"-days",JSON.stringify(days))}catch(e){}}};
+const streak=()=>{let n=0,d=today();if(!days.includes(d))d=add(d,-1);while(days.includes(d)){n++;d=add(d,-1)}return n};
+const clampAll=()=>{const last=add(exam,-1);if(last>today())items.forEach(i=>{if(i.due>last)i.due=last})};
+const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+document.getElementById("d").value=today();
+let editId=null;
+const ov=document.getElementById("ov");
+function openSheet(id){
+  editId=id||null;
+  const it=editId?items.find(x=>x.id===editId):null;
+  document.getElementById("ft").textContent=it?"Edit chapter":"Add a chapter";
+  document.getElementById("fs").textContent=it?"Save changes":"Add chapter";
+  document.getElementById("dlab").textContent=it?"Next revision":"Studied on";
+  document.getElementById("n").value=it?it.name:"";
+  document.getElementById("s").value=it?it.subj:"Physics";
+  document.getElementById("d").value=it?it.due:today();
+  ov.hidden=false;document.getElementById("n").focus();
+}
+const closeSheet=()=>{ov.hidden=true;editId=null};
+document.getElementById("fab").addEventListener("click",()=>openSheet());
+document.getElementById("fc").addEventListener("click",closeSheet);
+ov.addEventListener("click",e=>{if(e.target===ov)closeSheet()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!ov.hidden)closeSheet()});
+
+document.getElementById("f").addEventListener("submit",e=>{
+  e.preventDefault();
+  const name=document.getElementById("n").value.trim();
+  if(!name)return;
+  const studied=document.getElementById("d").value||today();
+  const subj=document.getElementById("s").value;
+  const wasEditing=!!editId;
+  if(editId){const it=items.find(x=>x.id===editId);if(it){it.name=name;it.subj=subj;it.due=studied;picks={ids:[]}}}
+  else items.push({id:Date.now()+Math.random(),name,subj,stage:0,reps:0,due:nextDue(studied,gapFor(0))});
+  save();closeSheet();render();showToast(wasEditing?"Chapter updated":"Chapter added");
+});
+
+function review(id,r){
+  const it=items.find(x=>x.id===id);if(!it)return;markDay();
+  if(r==="good"){it.stage=Math.min(it.stage+1,GAPS.length-1);it.due=nextDue(today(),gapFor(it.stage));it.reps++}
+  else if(r==="hard"){it.due=nextDue(today(),Math.max(1,Math.round(gapFor(it.stage)/2)));it.reps++}
+  else{it.stage=0;it.due=add(today(),1)}
+  save();render();
+}
+let lastAct=null,undoT=null;
+let expandedReviewId=null;
+let recentlyRatedId=null;
+function toggleReview(id){expandedReviewId=expandedReviewId===id?null:id;render()}
+function undo(){
+  if(!lastAct)return;
+  const it=items.find(x=>x.id===lastAct.id);
+  if(it){it.stage=lastAct.stage;it.due=lastAct.due;it.reps=lastAct.reps}
+  if(lastAct.addedDay){days=days.filter(d=>d!==today());try{localStorage.setItem(KEY+"-days",JSON.stringify(days))}catch(e){}}
+  clearTimeout(undoT);lastAct=null;save();render();
+}
+function rate(id,r){
+  const it=items.find(x=>x.id===id);if(!it)return;
+  lastAct={id:it.id,name:it.name,r:r,stage:it.stage,due:it.due,reps:it.reps,addedDay:!days.includes(today())};
+  clearTimeout(undoT);undoT=setTimeout(()=>{lastAct=null;render()},6000);
+  markDay();
+  const last=GAPS.length-1;
+  const s=[0,Math.max(it.stage-1,0),it.stage,Math.min(it.stage+1,last),Math.min(it.stage+2,last)][r-1];
+  it.stage=s;it.due=nextDue(today(),gapFor(s));it.reps++;
+  recentlyRatedId=id;save();render();
+  const gap=Math.max(1,diff(it.due,today()));
+  showToast(`Rating saved · next review in ${gap} day${gap===1?"":"s"}`);
+  setTimeout(()=>{if(recentlyRatedId===id)recentlyRatedId=null},700);
+}
+function del(id){const it=items.find(x=>x.id===id);items=items.filter(x=>x.id!==id);save();render();if(it)showToast("Chapter removed")}
+
+function card(it,isDue){
+  const late=diff(today(),it.due);
+  const when=isDue?(late>0?`<span class="late">${late} day${late>1?"s":""} overdue</span>`:"Due today"):`Due ${it.due} (in ${-late} day${-late>1?"s":""})`;
+  const dots=GAPS.map((g,i)=>`<i class="${i<it.stage?"on":i===it.stage?"now":""}" title="${g} days"></i>`).join("");
+  const acts=isDue?`<div class="rate" ${expandedReviewId===it.id?"":"hidden"}><div class="meta">How well did you know it?</div><div class="rbtn">${[[1,"Blank"],[2,"Weak"],[3,"Okay"],[4,"Good"],[5,"Solid"]].map(r=>`<button onclick="rate(${it.id},${r[0]})"><b>${r[0]}</b><small>${r[1]}</small></button>`).join("")}</div></div>`:"";
+  return `<div class="item${it.id===recentlyRatedId?" just-rated":""}" data-s="${it.subj}"><div class="top"><div><button class="chapter-toggle name" aria-expanded="${expandedReviewId===it.id}" onclick="toggleReview(${it.id})">${esc(it.name)}</button><div class="meta">${it.subj} · ${when}</div></div><div class="tb"><button class="x" aria-label="Edit ${esc(it.name)}" onclick="openSheet(${it.id})"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 3a2.83 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg></button><button class="x" aria-label="Remove ${esc(it.name)}" onclick="del(${it.id})">×</button></div></div><div class="curve"><em>next gap ${gapFor(it.stage)}d</em>${dots}</div>${acts}</div>`;
+}
+
+function render(){
+  const t=today();
+  const dueAll=items.filter(x=>x.due<=t).sort((a,b)=>a.due.localeCompare(b.due));
+  if(picks.date!==t||!picks.ids.length){const max=cap==="none"?Infinity:+cap;const ch=[];const g=["Physics","Chemistry","Maths"].map(s=>dueAll.filter(x=>x.subj===s));for(let r=0;ch.length<max;r++){let any=false;g.forEach(l=>{if(l[r]&&ch.length<max){ch.push(l[r].id);any=true}});if(!any)break}picks={date:t,ids:ch};try{localStorage.setItem(KEY+"-picks",JSON.stringify(picks))}catch(e){}}
+  const due=cap==="none"?dueAll:dueAll.filter(x=>picks.ids.includes(x.id));
+  const wait=cap==="none"?[]:dueAll.filter(x=>!picks.ids.includes(x.id));
+  const up=items.filter(x=>x.due>t).sort((a,b)=>a.due.localeCompare(b.due));
+  document.getElementById("due").innerHTML=(due.length?due.map(i=>card(i,true)).join(""):`<div class="empty">${dueAll.length?"Today's picks are done. Nice work.":items.length?"Nothing due. Come back tomorrow, or add a chapter you studied today.":"No chapters yet. Add the first one you studied above."}</div>`)+(wait.length?`<div class="meta">${wait.length} more waiting for later days: ${wait.map(w=>esc(w.name)).join(", ")}</div>`:"");
+  document.getElementById("up").innerHTML=up.length?up.map(i=>card(i,false)).join(""):`<div class="empty">Chapters you have revised will show up here with their next date.</div>`;
+  document.getElementById("sDue").textContent=due.length;
+  document.getElementById("sAll").textContent=items.length;
+  document.getElementById("sDone").textContent=items.reduce((a,b)=>a+b.reps,0);
+  document.getElementById("sExam").textContent=Math.max(0,diff(exam,t));
+  document.getElementById("sk").textContent=streak();
+  document.getElementById("undo").innerHTML=lastAct?`<div class="undo"><span>Rated ${esc(lastAct.name)} ${lastAct.r} out of 5.</span><button onclick="undo()">Undo</button></div>`:"";
+  document.getElementById("bar").innerHTML=Array.from({length:14},(_,i)=>{const d=add(t,i-13);return `<i class="${days.includes(d)?"on":""}${d===t?" today":""}" title="${d}"></i>`}).join("");
+  document.title=(due.length?`(${due.length}) `:"")+"Revisor";
+}
+
+document.getElementById("t").onclick=()=>{
+  const r=document.documentElement,dark=matchMedia("(prefers-color-scheme: dark)").matches;
+  const cur=r.dataset.theme||(dark?"dark":"light");
+  r.dataset.theme=cur==="dark"?"light":"dark";
+  showToast(r.dataset.theme==="dark"?"Dark theme":"Light theme");
+};
+const ei=document.getElementById("e");
+ei.value=exam;
+ei.addEventListener("change",()=>{if(!ei.value)return;exam=ei.value;try{localStorage.setItem(KEY+"-exam",exam)}catch(e){}picks={ids:[]};clampAll();save();render();showToast("Exam date saved")});
+const gb=document.getElementById("g"),pp=document.getElementById("pop");
+const closePop=()=>{pp.hidden=true;gb.setAttribute("aria-expanded","false")};
+gb.addEventListener("click",e=>{e.stopPropagation();pp.hidden=!pp.hidden;gb.setAttribute("aria-expanded",String(!pp.hidden))});
+document.addEventListener("click",e=>{if(!pp.hidden&&!pp.contains(e.target))closePop()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!pp.hidden){closePop();gb.focus()}});
+const ci=document.getElementById("c");
+ci.value=cap;if(!ci.value)ci.value="3";cap=ci.value;
+ci.addEventListener("change",()=>{cap=ci.value;try{localStorage.setItem(KEY+"-cap",cap)}catch(e){}picks={ids:[]};render();showToast("Daily limit updated")});
+const bk=document.getElementById("bk"),bm=document.getElementById("bm"),br=document.getElementById("br");
+let armed=null;
+document.getElementById("bb").addEventListener("click",()=>{
+  bk.value=JSON.stringify({v:1,items,exam,cap,days});bk.focus();bk.select();
+  bm.textContent="Backup ready. Copy it and keep it somewhere safe.";showToast("Backup ready to copy");
+  try{navigator.clipboard.writeText(bk.value).then(()=>{bm.textContent="Backup copied. Paste it into a note or message to yourself.";showToast("Backup copied")},()=>{})}catch(e){}
+});
+br.addEventListener("click",()=>{
+  let d;
+  try{d=JSON.parse(bk.value)}catch(e){d=null}
+  if(!d||!Array.isArray(d.items)){bm.textContent="That doesn't look like a backup. Paste the full text and try again.";return}
+  if(!armed){br.textContent="Tap again to replace current data";armed=setTimeout(()=>{armed=null;br.textContent="Restore"},5000);return}
+  clearTimeout(armed);armed=null;br.textContent="Restore";
+  const okD=s=>typeof s==="string"&&/^\d{4}-\d\d-\d\d$/.test(s);
+  items=d.items.filter(i=>i&&typeof i.name==="string"&&okD(i.due)).map(i=>({id:Date.now()+Math.random(),name:i.name,subj:["Physics","Chemistry","Maths"].includes(i.subj)?i.subj:"Physics",stage:Math.min(Math.max(+i.stage||0,0),GAPS.length-1),reps:Math.max(+i.reps||0,0),due:i.due}));
+  if(okD(d.exam)){exam=d.exam;ei.value=exam}
+  if(d.cap==="none"||[3,4,5,6,8,10,12].includes(+d.cap)){cap=String(d.cap);ci.value=cap}
+  days=Array.isArray(d.days)?d.days.filter(okD):[];
+  try{localStorage.setItem(KEY+"-exam",exam);localStorage.setItem(KEY+"-cap",cap);localStorage.setItem(KEY+"-days",JSON.stringify(days))}catch(e){}
+  picks={ids:[]};save();render();
+  bm.textContent="Restored "+items.length+" chapters.";showToast("Backup restored");
+});
+// ---------------- Revisor Cloud Sync (GitHub Gist) ----------------
+// The token is entered by the user at runtime. Never hard-code it into this public HTML.
+const GIST_TOKEN_KEY = "revisor-gist-token-v1";
+const GIST_ID_KEY = "revisor-gist-id-v1";
+const GIST_INIT_PREFIX = "revisor-gist-initialized-";
+const GIST_DIRTY_PREFIX = "revisor-gist-dirty-";
+const GIST_UPDATED_PREFIX = "revisor-gist-updated-";
+const GIST_FILE = "revisor-sync.json";
+const GIST_DESCRIPTION = "Revisor revision sync";
+const GIST_DATA_KEYS = new Set([KEY, KEY+"-exam", KEY+"-cap", KEY+"-days"]);
+const gistTokenInput = document.getElementById("gistToken");
+const gistIdInput = document.getElementById("gistId");
+const gistRememberInput = document.getElementById("gistRemember");
+const gistStatus = document.getElementById("gistStatus");
+const gistConnectButton = document.getElementById("gistConnect");
+const gistSyncButton = document.getElementById("gistSyncNow");
+let gistToken = "";
+let gistId = "";
+let gistReady = false;
+let gistBusy = false;
+let gistPendingWrite = false;
+let gistApplyingData = false;
+let gistWriteTimer = null;
+let gistPollTimer = null;
+let gistLastUpdatedAt = null;
+let gistConflict = false;
+
+function setGistStatus(message, state="") {
+  gistStatus.textContent = message;
+  gistStatus.dataset.state = state;
+}
+function localGistDirty() {
+  try { return !!gistId && localStorage.getItem(GIST_DIRTY_PREFIX+gistId) === "1"; }
+  catch (_) { return false; }
+}
+function markGistClean() {
+  try {
+    localStorage.removeItem(GIST_DIRTY_PREFIX+gistId);
+    localStorage.setItem(GIST_INIT_PREFIX+gistId, "1");
+    if (gistLastUpdatedAt) localStorage.setItem(GIST_UPDATED_PREFIX+gistId, gistLastUpdatedAt);
+  } catch (_) {}
+}
+function hasLocalGistData() {
+  return items.length > 0 || days.length > 0 || exam !== "2027-01-22" || cap !== "3";
+}
+function makeGistPayload() {
+  return {v:1, app:"Revisor", items, exam, cap, days};
+}
+function hasRemoteGistData(payload) {
+  return !!payload && Array.isArray(payload.items) && (payload.items.length > 0 || (Array.isArray(payload.days) && payload.days.length > 0) || (payload.exam && payload.exam !== "2027-01-22") || (payload.cap && payload.cap !== "3"));
+}
+function applyGistPayload(payload) {
+  if (!payload || !Array.isArray(payload.items)) throw new Error("The Gist doesn't contain a valid Revisor backup.");
+  gistApplyingData = true;
+  try {
+    const validDate = value => typeof value === "string" && /^\d{4}-\d\d-\d\d$/.test(value);
+    items = payload.items.filter(i => i && typeof i.name === "string" && validDate(i.due)).map(i => ({
+      id: i.id ?? (Date.now()+Math.random()), name: i.name,
+      subj: ["Physics","Chemistry","Maths"].includes(i.subj) ? i.subj : "Physics",
+      stage: Math.min(Math.max(Number(i.stage)||0,0),GAPS.length-1),
+      reps: Math.max(Number(i.reps)||0,0), due: i.due
+    }));
+    if (validDate(payload.exam)) exam = payload.exam;
+    if (payload.cap === "none" || [3,4,5,6,8,10,12].includes(Number(payload.cap))) cap = String(payload.cap);
+    days = Array.isArray(payload.days) ? payload.days.filter(validDate) : [];
+    picks = {ids:[]};
+    localStorage.setItem(KEY, JSON.stringify(items));
+    localStorage.setItem(KEY+"-exam", exam);
+    localStorage.setItem(KEY+"-cap", cap);
+    localStorage.setItem(KEY+"-days", JSON.stringify(days));
+    localStorage.removeItem(KEY+"-picks");
+    clampAll();
+  } finally { gistApplyingData = false; }
+  ei.value = exam;
+  ci.value = cap;
+}
+async function gistRequest(pathOrUrl, options={}) {
+  if (!gistToken) throw new Error("Enter your GitHub token first.");
+  const url = pathOrUrl.startsWith("https://") ? pathOrUrl : "https://api.github.com"+pathOrUrl;
+  const headers = {
+    "Accept":"application/vnd.github+json",
+    "Authorization":"Bearer "+gistToken,
+    "X-GitHub-Api-Version":"2022-11-28",
+    ...(options.headers || {})
+  };
+  if (options.body) headers["Content-Type"] = "application/json";
+  const response = await fetch(url, {...options, headers});
+  const textBody = await response.text();
+  let data = null;
+  try { data = textBody ? JSON.parse(textBody) : null; } catch (_) {}
+  if (!response.ok) {
+    const details = data && data.message ? data.message : ("HTTP "+response.status);
+    if (response.status === 401) throw new Error("GitHub rejected this token. Check it or create a new one.");
+    if (response.status === 403) throw new Error("GitHub denied access. Ensure the token has Gists read/write permission and has not expired.");
+    if (response.status === 404) throw new Error("Gist not found or this token cannot access it. Check the Gist ID.");
+    throw new Error(details);
+  }
+  return {data, response};
+}
+async function listRevisorGist() {
+  let url = "https://api.github.com/gists?per_page=100";
+  let pages = 0;
+  while (url && pages < 5) {
+    const {data, response} = await gistRequest(url);
+    const found = (Array.isArray(data) ? data : []).find(g => g.description === GIST_DESCRIPTION && g.files && g.files[GIST_FILE]);
+    if (found) return found;
+    const link = response.headers.get("Link") || "";
+    const match = link.split(",").map(x=>x.trim()).find(x=>/rel="next"/.test(x));
+    url = match ? (match.match(/<([^>]+)>/) || [])[1] : "";
+    pages++;
+  }
+  return null;
+}
+function gistPayloadFrom(gist) {
+  const file = gist && gist.files && gist.files[GIST_FILE];
+  if (!file || typeof file.content !== "string" || file.truncated) return null;
+  try {
+    const payload = JSON.parse(file.content);
+    return payload && Array.isArray(payload.items) ? payload : null;
+  } catch (_) { return null; }
+}
+async function createRevisorGist() {
+  setGistStatus("Creating your secret Revisor Gist…", "working");
+  const body = {description:GIST_DESCRIPTION, public:false, files:{[GIST_FILE]:{content:JSON.stringify(makeGistPayload(), null, 2)}}};
+  const {data} = await gistRequest("/gists", {method:"POST", body:JSON.stringify(body)});
+  gistId = data.id;
+  gistIdInput.value = gistId;
+  try { localStorage.setItem(GIST_ID_KEY, gistId); } catch (_) {}
+  gistLastUpdatedAt = data.updated_at || null;
+  gistReady = true;
+  gistConflict = false;
+  markGistClean();
+  gistSyncButton.disabled = false;
+  startGistPolling();
+  setGistStatus("Connected · initial backup uploaded. Gist ID: "+gistId, "success");
+  showToast("Revisor Gist created");
+}
+async function patchRevisorGist() {
+  const body = {files:{[GIST_FILE]:{content:JSON.stringify(makeGistPayload(), null, 2)}}};
+  const {data} = await gistRequest("/gists/"+encodeURIComponent(gistId), {method:"PATCH", body:JSON.stringify(body)});
+  gistLastUpdatedAt = data.updated_at || new Date().toISOString();
+  markGistClean();
+  gistConflict = false;
+  setGistStatus("Synced just now · changes saved to your Gist", "success");
+}
+async function pushGistData(showMessage=false, force=false) {
+  if (!gistReady || !gistId || !gistToken) return;
+  if (gistBusy) { gistPendingWrite = true; return; }
+  gistBusy = true;
+  gistPendingWrite = false;
+  try {
+    setGistStatus("Saving your latest changes to GitHub…", "working");
+    // Guard against silently overwriting changes made on another device.
+    const {data:remote} = await gistRequest("/gists/"+encodeURIComponent(gistId));
+    if (gistLastUpdatedAt && remote.updated_at !== gistLastUpdatedAt && !force) {
+      gistConflict = true;
+      setGistStatus("The Gist changed on another device. Click Sync now to choose which copy to keep.", "error");
+      return;
+    }
+    gistLastUpdatedAt = remote.updated_at || gistLastUpdatedAt;
+    await patchRevisorGist();
+    if (showMessage) showToast("Revisor synced to GitHub");
+  } catch (err) {
+    setGistStatus("Still saved on this device; cloud sync failed: "+(err.message || "check your connection"), "error");
+  } finally {
+    gistBusy = false;
+    if (gistPendingWrite && gistReady) {
+      gistPendingWrite = false;
+      clearTimeout(gistWriteTimer);
+      gistWriteTimer = setTimeout(() => pushGistData(), 900);
+    }
+  }
+}
+function scheduleGistSave() {
+  if (!gistId || !gistToken || !gistReady || gistApplyingData) return;
+  try { localStorage.setItem(GIST_DIRTY_PREFIX+gistId, "1"); } catch (_) {}
+  clearTimeout(gistWriteTimer);
+  gistWriteTimer = setTimeout(() => pushGistData(), 800);
+}
+async function pullGistData(gist, showMessage=false) {
+  const payload = gistPayloadFrom(gist);
+  if (!payload) throw new Error("The selected Gist has no valid Revisor data file.");
+  applyGistPayload(payload);
+  gistLastUpdatedAt = gist.updated_at || null;
+  gistConflict = false;
+  markGistClean();
+  render();
+  setGistStatus("Downloaded the latest Revisor data · "+(gist.updated_at ? new Date(gist.updated_at).toLocaleString() : "now"), "success");
+  if (showMessage) showToast("Revisor synced from GitHub");
+}
+async function initializeGist(gist, {automatic=false}={}) {
+  const payload = gistPayloadFrom(gist);
+  if (gist.files && gist.files[GIST_FILE] && !payload) throw new Error("The Revisor data file in this Gist is invalid. Choose the correct Gist ID; local data has been left untouched.");
+  const remoteHas = hasRemoteGistData(payload);
+  const initKey = GIST_INIT_PREFIX+gistId;
+  const initialized = localStorage.getItem(initKey) === "1";
+  const dirty = localGistDirty();
+  const priorUpdated = localStorage.getItem(GIST_UPDATED_PREFIX+gistId);
+  const localHas = hasLocalGistData();
+  gistReady = false;
+  gistLastUpdatedAt = priorUpdated || null;
+
+  if (remoteHas && dirty && priorUpdated && gist.updated_at !== priorUpdated) {
+    gistReady = true;
+    gistConflict = true;
+    setGistStatus("Both this device and GitHub have changes. Click Sync now to choose which copy to keep.", "error");
+  } else if (remoteHas && dirty) {
+    gistLastUpdatedAt = gist.updated_at || null;
+    gistReady = true;
+    await pushGistData();
+  } else if (remoteHas && (initialized || !localHas)) {
+    await pullGistData(gist);
+    gistReady = true;
+  } else if (remoteHas && localHas) {
+    const useRemote = window.confirm("Revisor found chapters on this device AND in your GitHub Gist.\n\nPress OK to download the Gist copy and replace this device's data.\nPress Cancel to upload this device's data and replace the Gist copy.");
+    gistLastUpdatedAt = gist.updated_at || null;
+    gistReady = true;
+    if (useRemote) await pullGistData(gist);
+    else await pushGistData();
+  } else {
+    gistLastUpdatedAt = gist.updated_at || null;
+    gistReady = true;
+    await pushGistData();
+  }
+  try { localStorage.setItem(GIST_ID_KEY, gistId); } catch (_) {}
+  if (!gistConflict) {
+    try { localStorage.setItem(GIST_INIT_PREFIX+gistId, "1"); } catch (_) {}
+    startGistPolling();
+  }
+  gistSyncButton.disabled = false;
+  gistDisconnectButton.disabled = false;
+  if (automatic && !gistConflict) setGistStatus("Gist sync connected · updates save automatically", "success");
+}
+async function connectGist({automatic=false}={}) {
+  try {
+    gistToken = gistTokenInput.value.trim() || localStorage.getItem(GIST_TOKEN_KEY) || "";
+    if (!gistToken) throw new Error("Paste your GitHub token first.");
+    if (gistRememberInput.checked) localStorage.setItem(GIST_TOKEN_KEY, gistToken);
+    else localStorage.removeItem(GIST_TOKEN_KEY);
+    setGistStatus("Checking your GitHub token…", "working");
+    const {data:user} = await gistRequest("/user");
+    if (!user || !user.login) throw new Error("GitHub couldn't verify this token.");
+    gistId = gistIdInput.value.trim() || localStorage.getItem(GIST_ID_KEY) || "";
+    let gist = null;
+    if (gistId) {
+      const {data} = await gistRequest("/gists/"+encodeURIComponent(gistId));
+      gist = data;
+      if (!gist.files || (!gist.files[GIST_FILE] && gist.description !== GIST_DESCRIPTION)) {
+        throw new Error("That Gist doesn't look like Revisor's sync file. Clear the Gist ID field to find your Revisor Gist automatically.");
+      }
+    } else {
+      gist = await listRevisorGist();
+    }
+    if (!gist) {
+      await createRevisorGist();
+      return;
+    }
+    gistId = gist.id;
+    gistIdInput.value = gistId;
+    try { localStorage.setItem(GIST_ID_KEY, gistId); } catch (_) {}
+    gistLastUpdatedAt = gist.updated_at || null;
+    await initializeGist(gist, {automatic});
+    if (!automatic && !gistConflict) showToast("Gist sync connected");
+  } catch (err) {
+    gistReady = false;
+    gistSyncButton.disabled = true;
+    setGistStatus(err.message || "Couldn't connect to GitHub Gist.", "error");
+  }
+}
+async function syncGistNow() {
+  if (!gistToken || !gistId) { await connectGist(); return; }
+  try {
+    setGistStatus("Checking GitHub for the newest copy…", "working");
+    const {data:remote} = await gistRequest("/gists/"+encodeURIComponent(gistId));
+    const payload = gistPayloadFrom(remote);
+    if (!payload) throw new Error("The Gist doesn't contain valid Revisor data.");
+    const remoteChanged = !!gistLastUpdatedAt && remote.updated_at !== gistLastUpdatedAt;
+    if (gistConflict || (localGistDirty() && remoteChanged)) {
+      const useRemote = window.confirm("There are different changes on this device and in GitHub.\n\nPress OK to DOWNLOAD the GitHub copy (discarding this device's unsynced changes).\nPress Cancel to UPLOAD this device's copy (replacing the GitHub copy).");
+      gistLastUpdatedAt = remote.updated_at || null;
+      if (useRemote) await pullGistData(remote, true);
+      else await pushGistData(true, true);
+      return;
+    }
+    if (!localGistDirty() && remoteChanged) {
+      await pullGistData(remote, true);
+    } else if (localGistDirty()) {
+      gistLastUpdatedAt = remote.updated_at || gistLastUpdatedAt;
+      await pushGistData(true);
+    } else {
+      await pullGistData(remote, true);
+    }
+  } catch (err) { setGistStatus("Sync failed: "+(err.message || "check your connection"), "error"); }
+}
+function startGistPolling() {
+  clearInterval(gistPollTimer);
+  gistPollTimer = setInterval(async () => {
+    if (!gistReady || !gistId || !gistToken || document.visibilityState !== "visible" || gistBusy) return;
+    try {
+      const {data:remote} = await gistRequest("/gists/"+encodeURIComponent(gistId));
+      if (!remote.updated_at || remote.updated_at === gistLastUpdatedAt) return;
+      if (localGistDirty()) {
+        gistConflict = true;
+        setGistStatus("GitHub has newer data while this device has unsynced edits. Click Sync now to choose a copy.", "error");
+        return;
+      }
+      await pullGistData(remote, true);
+    } catch (err) { setGistStatus("Couldn't check for updates: "+(err.message || "network error"), "error"); }
+  }, 45000);
+}
+const gistDisconnectButton = document.getElementById("gistDisconnect");
+gistConnectButton.addEventListener("click", () => connectGist());
+gistSyncButton.addEventListener("click", syncGistNow);
+gistDisconnectButton.addEventListener("click", () => {
+  gistReady = false; gistConflict = false; gistToken = "";
+  clearTimeout(gistWriteTimer); clearInterval(gistPollTimer);
+  try { localStorage.removeItem(GIST_TOKEN_KEY); } catch (_) {}
+  gistTokenInput.value = ""; gistRememberInput.checked = false;
+  gistSyncButton.disabled = true;
+  setGistStatus("Disconnected. Your local chapters are still on this device; the Gist was not deleted.", "success");
+  showToast("Gist sync disconnected");
+});
+
+// Watch the app's existing localStorage writes so chapters, exam date, cap and streak sync automatically.
+const originalGistStorageSetItem = Storage.prototype.setItem;
+Storage.prototype.setItem = function(key, value) {
+  originalGistStorageSetItem.call(this, key, value);
+  if (this === window.localStorage && GIST_DATA_KEYS.has(String(key)) && !gistApplyingData) scheduleGistSave();
+};
+window.addEventListener("online", () => {
+  if (gistReady && localGistDirty()) pushGistData();
+});
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "hidden" && gistReady && localGistDirty()) {
+    clearTimeout(gistWriteTimer); pushGistData();
+  }
+});
+
+// Restore the Gist ID, and resume automatically only if the user chose to remember the token.
+try {
+  gistIdInput.value = localStorage.getItem(GIST_ID_KEY) || "";
+  const savedToken = localStorage.getItem(GIST_TOKEN_KEY) || "";
+  if (savedToken) {
+    gistTokenInput.value = savedToken;
+    gistRememberInput.checked = true;
+  }
+} catch (_) {}
+
+clampAll();save();
+render();
+if (gistTokenInput.value.trim()) setTimeout(() => connectGist({automatic:true}), 350);
+</script>
+</body>
+</html>
